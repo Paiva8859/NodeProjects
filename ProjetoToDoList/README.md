@@ -64,6 +64,32 @@
    - Coleta de feedback.
    - Implementação de melhorias baseadas no feedback.
 
+## Diagrama de Gantt:
+```mermaid
+gantt
+    title Cronograma de Desenvolvimento da Aplicação To-Do List
+    dateFormat  YYYY-MM-DD
+    section Cadastro e Login de Usuários
+    Cadastrar Usuário       :a1, 2024-09-01, 3d
+    Login                   :a2, after a1, 2d
+    Recuperar Senha         :a3, after a2, 2d
+    Gerenciar Perfil        :a4, after a3, 3d
+
+    section Gerenciamento de Tarefas
+    Criar Tarefa            :b1, 2024-09-08, 3d
+    Editar Tarefa           :b2, after b1, 2d
+    Excluir Tarefa          :b3, after b2, 2d
+    Concluir Tarefa         :b4, after b3, 1d
+    Definir Categoria       :b5, 2024-09-08, 2d
+    Definir Prioridade      :b6, after b5, 2d
+    Visualizar Tarefas      :b7, 2024-09-12, 2d
+
+    section Relatórios e Estatísticas
+    Visualizar Tarefas Concluídas :c1, 2024-09-14, 2d
+    Visualizar Tarefas Pendentes  :c2, after c1, 2d
+
+```
+
 ## Análise de Risco
 
 1. **Risco: Atrasos no Desenvolvimento**
