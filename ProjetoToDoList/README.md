@@ -214,5 +214,67 @@ flowchart TD
 ```
 ---
 # Prototipagem:
+## Manual de Identidade Visual:
+
+### Introdução
+
+Este guia fornece as diretrizes para a aplicação correta da identidade visual do SENAI-SP em ambientes digitais, como software e plataformas online.
+
+### Marca Preferencial
+
+- **Uso Preferencial**: Em fundo branco.
+- **Altura Mínima**: 14 px em digital.
+- **Área de Não Interferência**: Espaço equivalente à distância da letra “i” até o término do logo.
+
+### Cores
+
+#### Cores Primárias
+
+- **Vermelho**: 
+  - Pantone 485
+  - Hex: #e30613
+- **Branco**: 
+  - Hex: #ffffff
+- **Preto**: 
+  - Hex: #000000
+- **Cinza Claro**: 
+  - Hex: #878787
+
+#### Cores Variantes
+
+- **Pantone 7622**: Hex #9a1915
+- **Pantone 1815**: Hex #681413
+
+#### Monocromias
+
+- **Preto**: Hex #000000
+- **Cinza**: Hex #878787
+- **Branco**: Hex #ffffff
+
+### Aplicações Digitais
+
+#### Sobre Fundos Coloridos
+
+- **Preferência**: Aplicar a marca em vermelho sempre que possível.
+- **Contraste**: Garantir alto contraste com o fundo para legibilidade.
+
+#### Uso de Logotipo
+
+- **Não Alterar**: Cor do texto, proporções ou adicionar efeitos.
+- **Não Usar**: Como marca d’água ou sobre fundos sem contraste adequado.
+
+### Fontes
+
+- **Montserrat**:
+  - **Títulos e Cabeçalhos**: Bold, Semibold.
+  - **Texto**: Regular, Light.
+
+### Recomendações para Desenvolvimento de Software
+
+1. **Aplicação do Logotipo**: Utilize o logotipo preferencialmente em fundo branco ou com alto contraste.
+2. **Paleta de Cores**: Adote as cores primárias e variantes para criar uma interface harmoniosa e alinhada com a identidade visual.
+3. **Tipografia**: Use a fonte Montserrat para títulos e textos, seguindo as variações indicadas.
+4. **Consistência**: Mantenha a integridade da marca seguindo as diretrizes de altura mínima e área de não interferência.
+
 ## Baixa fidelidade:
 ![image](https://github.com/user-attachments/assets/d340236d-06d1-408a-b3de-3f3f293317a8)
