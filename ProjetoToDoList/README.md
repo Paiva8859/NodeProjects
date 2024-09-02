@@ -159,5 +159,34 @@ flowchart TD
     U --> UC11[Definir Prioridade]
     U --> UC12[Visualizar Tarefas Concluídas]
     U --> UC13[Visualizar Tarefas Pendentes]
-
+```
+## Fluxo
+```mermaid
+flowchart TD
+    A[Usuário acessa o sistema] --> B[Cadastrar Usuário?]
+    B --> |Sim| C[Cadastrar Usuário]
+    B --> |Não| D[Login]
+    C --> D
+    D --> E[Recuperar Senha?]
+    E --> |Sim| F[Recuperar Senha]
+    E --> |Não| G[Gerenciar Perfil]
+    F --> G
+    G --> H[Adicionar Nova Tarefa?]
+    H --> |Sim| I[Criar Tarefa]
+    I --> J[Definir Categoria]
+    I --> K[Definir Prioridade]
+    J --> L[Visualizar Tarefas]
+    K --> L
+    L --> M[Editar Tarefa?]
+    M --> |Sim| N[Editar Tarefa]
+    N --> L
+    M --> |Não| O[Excluir Tarefa?]
+    O --> |Sim| P[Excluir Tarefa]
+    P --> L
+    O --> |Não| Q[Concluir Tarefa?]
+    Q --> |Sim| R[Concluir Tarefa]
+    R --> S[Visualizar Tarefas Concluídas]
+    Q --> |Não| T[Visualizar Tarefas Pendentes]
+    S --> L
+    T --> L
 ```
