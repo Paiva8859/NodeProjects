@@ -102,6 +102,38 @@
    - Linguagens de programação: JavaScript (React), Node.js.
    - Banco de Dados: MongoDB.
 
+# Diagramas:
+## Classe:
+'''mermaid
+   classDiagram
+    class Usuario {
+        +int id
+        +string nome
+        +string email
+        +string senha
+        +string perfil
+        +string recuperarSenha()
+        +boolean autenticar(email: string, senha: string)
+    }
+
+    class Tarefa {
+        +int id
+        +string titulo
+        +string descricao
+        +Date dataCriacao
+        +Date dataConclusao
+        +boolean concluida
+        +string categoria
+        +string prioridade
+        +criarTarefa(titulo: string, descricao: string, categoria: string, prioridade: string)
+        +editarTarefa(titulo: string, descricao: string, categoria: string, prioridade: string)
+        +concluirTarefa()
+        +excluirTarefa()
+    }
+
+    %% Relacionamentos entre as classes
+    Usuario "1" -- "0..*" Tarefa : "cria"
+'''
 3. **Infraestrutura:**
    - Servidores para hospedar a aplicação.
    - Serviços de backup e recuperação.
