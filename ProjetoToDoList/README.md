@@ -177,16 +177,10 @@ flowchart TD
     I --> K[Definir Prioridade]
     J --> L[Visualizar Tarefas]
     K --> L
-    L --> M[Editar Tarefa?]
-    M --> |Sim| N[Editar Tarefa]
-    N --> L
-    M --> |Não| O[Excluir Tarefa?]
-    O --> |Sim| P[Excluir Tarefa]
-    P --> L
-    O --> |Não| Q[Concluir Tarefa?]
-    Q --> |Sim| R[Concluir Tarefa]
-    R --> S[Visualizar Tarefas Concluídas]
-    Q --> |Não| T[Visualizar Tarefas Pendentes]
-    S --> L
-    T --> L
+    L --> M[Editar Tarefa]
+    L --> N[Excluir Tarefa]
+    L --> O[Concluir Tarefa]
+    L --> P[Visualizar Tarefas Concluídas]
+    L --> Q[Visualizar Tarefas Pendentes]
+
 ```
