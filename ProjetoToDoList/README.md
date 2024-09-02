@@ -286,8 +286,6 @@ Este guia fornece as diretrizes para a aplicação correta da identidade visual 
 </p>
 
 ## Prototipagem de Alta fidelidade
-![image](https://github.com/user-attachments/assets/1566e762-056d-4fb2-86ae-752de1a5b901)
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/e9716b0a-ad6a-44b3-8d7d-faf2c637d219" alt="image">
-</p>
+![image](https://github.com/user-attachments/assets/9f30a6ad-eb51-49a6-ae5f-bd4c6c7244a4)
+
 
