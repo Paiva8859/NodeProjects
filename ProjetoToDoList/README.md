@@ -102,6 +102,15 @@
    - Linguagens de programação: JavaScript (React), Node.js.
    - Banco de Dados: MongoDB.
 
+3. **Infraestrutura:**
+   - Servidores para hospedar a aplicação.
+   - Serviços de backup e recuperação.
+
+4. **Custos:**
+   - Custo de desenvolvimento (salários e honorários).
+   - Licenças de software e ferramentas.
+   - Treinamento e suporte.
+  
 # Diagramas:
 ## Classe:
 '''mermaid
@@ -134,11 +143,3 @@
     %% Relacionamentos entre as classes
     Usuario "1" -- "0..*" Tarefa : "cria"
 '''
-3. **Infraestrutura:**
-   - Servidores para hospedar a aplicação.
-   - Serviços de backup e recuperação.
-
-4. **Custos:**
-   - Custo de desenvolvimento (salários e honorários).
-   - Licenças de software e ferramentas.
-   - Treinamento e suporte.
