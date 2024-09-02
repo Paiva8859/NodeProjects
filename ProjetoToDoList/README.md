@@ -145,34 +145,19 @@ classDiagram
 ```
 ## Uso:
 ```mermaid
-usecaseDiagram
-    actor Usuario as U
+flowchart TD
+    U[Usuário] --> UC1[Cadastrar Usuário]
+    U --> UC2[Login]
+    U --> UC3[Recuperar Senha]
+    U --> UC4[Gerenciar Perfil]
+    U --> UC5[Criar Tarefa]
+    U --> UC6[Editar Tarefa]
+    U --> UC7[Excluir Tarefa]
+    U --> UC8[Concluir Tarefa]
+    U --> UC9[Visualizar Tarefas]
+    U --> UC10[Definir Categoria]
+    U --> UC11[Definir Prioridade]
+    U --> UC12[Visualizar Tarefas Concluídas]
+    U --> UC13[Visualizar Tarefas Pendentes]
 
-    usecase UC1 as "Cadastrar Usuário"
-    usecase UC2 as "Login"
-    usecase UC3 as "Recuperar Senha"
-    usecase UC4 as "Gerenciar Perfil"
-    usecase UC5 as "Criar Tarefa"
-    usecase UC6 as "Editar Tarefa"
-    usecase UC7 as "Excluir Tarefa"
-    usecase UC8 as "Concluir Tarefa"
-    usecase UC9 as "Visualizar Tarefas"
-    usecase UC10 as "Definir Categoria"
-    usecase UC11 as "Definir Prioridade"
-    usecase UC12 as "Visualizar Tarefas Concluídas"
-    usecase UC13 as "Visualizar Tarefas Pendentes"
-
-    U --> UC1
-    U --> UC2
-    U --> UC3
-    U --> UC4
-    U --> UC5
-    U --> UC6
-    U --> UC7
-    U --> UC8
-    U --> UC9
-    U --> UC10
-    U --> UC11
-    U --> UC12
-    U --> UC13
 ```
