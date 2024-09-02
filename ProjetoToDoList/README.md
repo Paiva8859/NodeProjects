@@ -143,3 +143,48 @@ classDiagram
  %% Relacionamentos entre as classes
  Usuario "1" -- "0..*" Tarefa : "cria"
 ```
+## Uso:
+```mermaid
+---
+title: To-Do List Application - Use Case Diagram
+---
+
+%% Ator externo: Usuario
+actor Usuario
+
+%% Casos de uso para a gestão de usuários
+usecase "Cadastrar Usuário" as UC1
+usecase "Login" as UC2
+usecase "Recuperar Senha" as UC3
+usecase "Gerenciar Perfil" as UC4
+
+%% Casos de uso para a gestão de tarefas
+usecase "Criar Tarefa" as UC5
+usecase "Editar Tarefa" as UC6
+usecase "Excluir Tarefa" as UC7
+usecase "Concluir Tarefa" as UC8
+usecase "Visualizar Tarefas" as UC9
+
+%% Casos de uso para categorização e priorização
+usecase "Definir Categoria" as UC10
+usecase "Definir Prioridade" as UC11
+
+%% Casos de uso para relatórios e estatísticas
+usecase "Visualizar Tarefas Concluídas" as UC12
+usecase "Visualizar Tarefas Pendentes" as UC13
+
+%% Relacionamento dos casos de uso com o ator Usuario
+Usuario -- UC1
+Usuario -- UC2
+Usuario -- UC3
+Usuario -- UC4
+Usuario -- UC5
+Usuario -- UC6
+Usuario -- UC7
+Usuario -- UC8
+Usuario -- UC9
+Usuario -- UC10
+Usuario -- UC11
+Usuario -- UC12
+Usuario -- UC13
+```
