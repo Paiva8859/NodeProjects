@@ -146,8 +146,8 @@ classDiagram
 ## Uso:
 ```mermaid
 usecaseDiagram
-    actor Usuario
-    
+    actor Usuario as U
+
     usecase UC1 as "Cadastrar Usuário"
     usecase UC2 as "Login"
     usecase UC3 as "Recuperar Senha"
@@ -161,18 +161,18 @@ usecaseDiagram
     usecase UC11 as "Definir Prioridade"
     usecase UC12 as "Visualizar Tarefas Concluídas"
     usecase UC13 as "Visualizar Tarefas Pendentes"
-    
-    Usuario --> UC1
-    Usuario --> UC2
-    Usuario --> UC3
-    Usuario --> UC4
-    Usuario --> UC5
-    Usuario --> UC6
-    Usuario --> UC7
-    Usuario --> UC8
-    Usuario --> UC9
-    Usuario --> UC10
-    Usuario --> UC11
-    Usuario --> UC12
-    Usuario --> UC13
+
+    U --> UC1
+    U --> UC2
+    U --> UC3
+    U --> UC4
+    U --> UC5
+    U --> UC6
+    U --> UC7
+    U --> UC8
+    U --> UC9
+    U --> UC10
+    U --> UC11
+    U --> UC12
+    U --> UC13
 ```
