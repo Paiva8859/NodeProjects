@@ -276,5 +276,5 @@ Este guia fornece as diretrizes para a aplicação correta da identidade visual 
 3. **Tipografia**: Use a fonte Montserrat para títulos e textos, seguindo as variações indicadas.
 4. **Consistência**: Mantenha a integridade da marca seguindo as diretrizes de altura mínima e área de não interferência.
 
-## Baixa fidelidade:
+## Prototipagem de Baixa fidelidade:
 ![image](https://github.com/user-attachments/assets/d340236d-06d1-408a-b3de-3f3f293317a8)
