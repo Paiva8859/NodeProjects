@@ -281,4 +281,6 @@ Este guia fornece as diretrizes para a aplicação correta da identidade visual 
 
 ## Prototipagem de Média fidelidade:
 ![image](https://github.com/user-attachments/assets/20494f07-9660-4049-b4c6-624248c5b50a)
-![image](https://github.com/user-attachments/assets/7c2c428f-6710-4ece-a6f1-9f1d74eed5ce)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7c2c428f-6710-4ece-a6f1-9f1d74eed5ce" alt="image">
+</p>
