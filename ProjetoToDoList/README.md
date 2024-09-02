@@ -113,7 +113,7 @@
   
 # Diagramas:
 ## Classe:
-´´´mermaid
+```mermaid
 classDiagram
  class Usuario {
      +int id
@@ -142,4 +142,4 @@ classDiagram
 
  %% Relacionamentos entre as classes
  Usuario "1" -- "0..*" Tarefa : "cria"
-´´´
+```
