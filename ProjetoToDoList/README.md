@@ -136,7 +136,9 @@ gantt
    - Custo de desenvolvimento (salários e honorários).
    - Licenças de software e ferramentas.
    - Treinamento e suporte.
-  
+
+---
+
 # Diagramas:
 ## Classe:
 ```mermaid
@@ -210,3 +212,7 @@ flowchart TD
     L --> Q[Visualizar Tarefas Pendentes]
 
 ```
+---
+# Prototipagem:
+## Baixa fidelidade:
+![image](https://github.com/user-attachments/assets/d340236d-06d1-408a-b3de-3f3f293317a8)
