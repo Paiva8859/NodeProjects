@@ -64,6 +64,32 @@
    - Coleta de feedback.
    - Implementação de melhorias baseadas no feedback.
 
+## Diagrama de Gantt:
+```mermaid
+gantt
+    title Cronograma de Desenvolvimento da Aplicação To-Do List
+    dateFormat  YYYY-MM-DD
+    section Cadastro e Login de Usuários
+    Cadastrar Usuário       :a1, 2024-09-01, 3d
+    Login                   :a2, after a1, 2d
+    Recuperar Senha         :a3, after a2, 2d
+    Gerenciar Perfil        :a4, after a3, 3d
+
+    section Gerenciamento de Tarefas
+    Criar Tarefa            :b1, 2024-09-08, 3d
+    Editar Tarefa           :b2, after b1, 2d
+    Excluir Tarefa          :b3, after b2, 2d
+    Concluir Tarefa         :b4, after b3, 1d
+    Definir Categoria       :b5, 2024-09-08, 2d
+    Definir Prioridade      :b6, after b5, 2d
+    Visualizar Tarefas      :b7, 2024-09-12, 2d
+
+    section Relatórios e Estatísticas
+    Visualizar Tarefas Concluídas :c1, 2024-09-14, 2d
+    Visualizar Tarefas Pendentes  :c2, after c1, 2d
+
+```
+
 ## Análise de Risco
 
 1. **Risco: Atrasos no Desenvolvimento**
@@ -110,3 +136,158 @@
    - Custo de desenvolvimento (salários e honorários).
    - Licenças de software e ferramentas.
    - Treinamento e suporte.
+
+---
+
+# Diagramas:
+## Classe:
+```mermaid
+classDiagram
+ class Usuario {
+     +int id
+     +string nome
+     +string email
+     +string senha
+     +string perfil
+     +string recuperarSenha()
+     +boolean autenticar(email: string, senha: string)
+ }
+
+ class Tarefa {
+     +int id
+     +string titulo
+     +string descricao
+     +Date dataCriacao
+     +Date dataConclusao
+     +boolean concluida
+     +string categoria
+     +string prioridade
+     +criarTarefa(titulo: string, descricao: string, categoria: string, prioridade: string)
+     +editarTarefa(titulo: string, descricao: string, categoria: string, prioridade: string)
+     +concluirTarefa()
+     +excluirTarefa()
+ }
+
+ %% Relacionamentos entre as classes
+ Usuario "1" -- "0..*" Tarefa : "cria"
+```
+## Uso:
+```mermaid
+flowchart TD
+    U[Usuário] --> UC1[Cadastrar Usuário]
+    U --> UC2[Login]
+    U --> UC3[Recuperar Senha]
+    U --> UC4[Gerenciar Perfil]
+    U --> UC5[Criar Tarefa]
+    U --> UC6[Editar Tarefa]
+    U --> UC7[Excluir Tarefa]
+    U --> UC8[Concluir Tarefa]
+    U --> UC9[Visualizar Tarefas]
+    U --> UC10[Definir Categoria]
+    U --> UC11[Definir Prioridade]
+    U --> UC12[Visualizar Tarefas Concluídas]
+    U --> UC13[Visualizar Tarefas Pendentes]
+```
+## Fluxo
+```mermaid
+flowchart TD
+    A[Usuário acessa o sistema] --> B[Cadastrar Usuário?]
+    B --> |Sim| C[Cadastrar Usuário]
+    B --> |Não| D[Login]
+    C --> D
+    D --> E[Recuperar Senha?]
+    E --> |Sim| F[Recuperar Senha]
+    E --> |Não| G[Gerenciar Perfil]
+    F --> G
+    G --> H[Adicionar Nova Tarefa?]
+    H --> |Sim| I[Criar Tarefa]
+    I --> J[Definir Categoria]
+    I --> K[Definir Prioridade]
+    J --> L[Visualizar Tarefas]
+    K --> L
+    L --> M[Editar Tarefa]
+    L --> N[Excluir Tarefa]
+    L --> O[Concluir Tarefa]
+    L --> P[Visualizar Tarefas Concluídas]
+    L --> Q[Visualizar Tarefas Pendentes]
+
+```
+---
+# Prototipagem:
+## Manual de Identidade Visual:
+
+### Introdução
+
+Este guia fornece as diretrizes para a aplicação correta da identidade visual do SENAI-SP em ambientes digitais, como software e plataformas online.
+
+### Marca Preferencial
+
+- **Uso Preferencial**: Em fundo branco.
+- **Altura Mínima**: 14 px em digital.
+- **Área de Não Interferência**: Espaço equivalente à distância da letra “i” até o término do logo.
+
+### Cores
+
+#### Cores Primárias
+
+- **Vermelho**: 
+  - Pantone 485
+  - Hex: #e30613
+- **Branco**: 
+  - Hex: #ffffff
+- **Preto**: 
+  - Hex: #000000
+- **Cinza Claro**: 
+  - Hex: #878787
+
+#### Cores Variantes
+
+- **Pantone 7622**: Hex #9a1915
+- **Pantone 1815**: Hex #681413
+
+#### Monocromias
+
+- **Preto**: Hex #000000
+- **Cinza**: Hex #878787
+- **Branco**: Hex #ffffff
+
+### Aplicações Digitais
+
+#### Sobre Fundos Coloridos
+
+- **Preferência**: Aplicar a marca em vermelho sempre que possível.
+- **Contraste**: Garantir alto contraste com o fundo para legibilidade.
+
+#### Uso de Logotipo
+
+- **Não Alterar**: Cor do texto, proporções ou adicionar efeitos.
+- **Não Usar**: Como marca d’água ou sobre fundos sem contraste adequado.
+
+### Fontes
+
+- **Montserrat**:
+  - **Títulos e Cabeçalhos**: Bold, Semibold.
+  - **Texto**: Regular, Light.
+
+### Recomendações para Desenvolvimento de Software
+
+1. **Aplicação do Logotipo**: Utilize o logotipo preferencialmente em fundo branco ou com alto contraste.
+2. **Paleta de Cores**: Adote as cores primárias e variantes para criar uma interface harmoniosa e alinhada com a identidade visual.
+3. **Tipografia**: Use a fonte Montserrat para títulos e textos, seguindo as variações indicadas.
+4. **Consistência**: Mantenha a integridade da marca seguindo as diretrizes de altura mínima e área de não interferência.
+
+## Prototipagem de Baixa fidelidade:
+![image](https://github.com/user-attachments/assets/d340236d-06d1-408a-b3de-3f3f293317a8)
+
+## Prototipagem de Média fidelidade:
+![image](https://github.com/user-attachments/assets/20494f07-9660-4049-b4c6-624248c5b50a)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7c2c428f-6710-4ece-a6f1-9f1d74eed5ce" alt="image">
+</p>
+
+## Prototipagem de Alta fidelidade
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9f30a6ad-eb51-49a6-ae5f-bd4c6c7244a4" alt="image">
+</p>
+
+
