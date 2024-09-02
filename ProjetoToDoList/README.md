@@ -145,46 +145,34 @@ classDiagram
 ```
 ## Uso:
 ```mermaid
----
-title: To-Do List Application - Use Case Diagram
----
-
-%% Ator externo: Usuario
-actor Usuario
-
-%% Casos de uso para a gestão de usuários
-usecase "Cadastrar Usuário" as UC1
-usecase "Login" as UC2
-usecase "Recuperar Senha" as UC3
-usecase "Gerenciar Perfil" as UC4
-
-%% Casos de uso para a gestão de tarefas
-usecase "Criar Tarefa" as UC5
-usecase "Editar Tarefa" as UC6
-usecase "Excluir Tarefa" as UC7
-usecase "Concluir Tarefa" as UC8
-usecase "Visualizar Tarefas" as UC9
-
-%% Casos de uso para categorização e priorização
-usecase "Definir Categoria" as UC10
-usecase "Definir Prioridade" as UC11
-
-%% Casos de uso para relatórios e estatísticas
-usecase "Visualizar Tarefas Concluídas" as UC12
-usecase "Visualizar Tarefas Pendentes" as UC13
-
-%% Relacionamento dos casos de uso com o ator Usuario
-Usuario -- UC1
-Usuario -- UC2
-Usuario -- UC3
-Usuario -- UC4
-Usuario -- UC5
-Usuario -- UC6
-Usuario -- UC7
-Usuario -- UC8
-Usuario -- UC9
-Usuario -- UC10
-Usuario -- UC11
-Usuario -- UC12
-Usuario -- UC13
+usecaseDiagram
+    actor Usuario
+    
+    usecase UC1 as "Cadastrar Usuário"
+    usecase UC2 as "Login"
+    usecase UC3 as "Recuperar Senha"
+    usecase UC4 as "Gerenciar Perfil"
+    usecase UC5 as "Criar Tarefa"
+    usecase UC6 as "Editar Tarefa"
+    usecase UC7 as "Excluir Tarefa"
+    usecase UC8 as "Concluir Tarefa"
+    usecase UC9 as "Visualizar Tarefas"
+    usecase UC10 as "Definir Categoria"
+    usecase UC11 as "Definir Prioridade"
+    usecase UC12 as "Visualizar Tarefas Concluídas"
+    usecase UC13 as "Visualizar Tarefas Pendentes"
+    
+    Usuario --> UC1
+    Usuario --> UC2
+    Usuario --> UC3
+    Usuario --> UC4
+    Usuario --> UC5
+    Usuario --> UC6
+    Usuario --> UC7
+    Usuario --> UC8
+    Usuario --> UC9
+    Usuario --> UC10
+    Usuario --> UC11
+    Usuario --> UC12
+    Usuario --> UC13
 ```
